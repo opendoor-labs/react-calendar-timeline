@@ -78,10 +78,10 @@ $weekend: rgba(250, 246, 225, 0.5);
       border-bottom: $border-width solid #ebeff3;
 
       &.rct-sidebar-row-odd {
-        background: $row-background-odd;
+        background: $row-background-odd!important;
       }
       &.rct-sidebar-row-even {
-        background: $row-background-even;
+        background: $row-background-even!important;
       }
     }
   }
@@ -109,18 +109,19 @@ $weekend: rgba(250, 246, 225, 0.5);
     -moz-user-select: -moz-none;
     -ms-user-select: none;
     user-select: none;
+    position: absolute;
+    z-index: 30;
 
     .rct-hl-even,
     .rct-hl-odd {
-      border-bottom: $border-width solid red;
       box-sizing: border-box;
       z-index: 40;
     }
     .rct-hl-odd {
-      background: $row-background-odd;
+      background: $row-background-odd!important;
     }
     .rct-hl-even {
-      background: $row-background-even;
+      background: $row-background-even!important;
     }
   }
 
@@ -158,7 +159,5 @@ $weekend: rgba(250, 246, 225, 0.5);
 
   .rct-calendar-header {
     border: 1px solid #bbb,
-
   }
-
 }
